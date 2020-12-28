@@ -9,9 +9,9 @@ public class Main {
 
 // todo:
 // 1. name gen - complete
-// 2. warrior base stats
+// 2. warrior base stats and class
 // 3. enemy base stats
-// 4. simple battle
+// 4. simple battle (use blackjack as an example)
 // 5. write simple battle to text file
 
 // FILE WRITING \\
