@@ -7,7 +7,7 @@ import java.util.List;
 
 public class FileReader {
     public static List<String> read(String path){
-        List<String> names = new ArrayList<String>();
+        List<String> lines = new ArrayList<String>();
         BufferedReader br = null;
 
         try {
@@ -17,7 +17,7 @@ public class FileReader {
 
             while((line = br.readLine()) != null) {
                 if(line.trim().length() > 0) {
-                    names.add(line);
+                    lines.add(line);
                 }
             }
 
@@ -33,6 +33,6 @@ public class FileReader {
             }
         }
 
-        return names;
+        return lines;
     }
 }

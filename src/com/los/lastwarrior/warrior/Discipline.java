@@ -1,4 +1,4 @@
-package com.los.lastwarrior;
+package com.los.lastwarrior.warrior;
 
 import java.util.List;
 
