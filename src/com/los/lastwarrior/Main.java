@@ -2,16 +2,19 @@ package com.los.lastwarrior;
 
 public class Main {
     public static void main(String[] args) {
-        NameGen nameGen = new NameGen();
-        System.out.println(nameGen.generateName());
+        Warrior warrior1 = new Warrior();
+        Warrior warrior2 = new Warrior();
+
+        System.out.println("\nWarrior1 ---- \n" + warrior1.toString());
+        System.out.println("\nWarrior2 ---- \n" + warrior2.toString());
     }
 }
 
 // todo:
 // 1. name gen - complete
-// 2. warrior base stats and class
+// 2. warrior base stats and class check python code for base
 // 3. enemy base stats
-// 4. simple battle (use blackjack as an example)
+// 4. simple battle (use blackjack/python code as an example)
 // 5. write simple battle to text file
 
 // FILE WRITING \\

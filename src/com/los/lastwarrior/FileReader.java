@@ -1,17 +1,17 @@
 package com.los.lastwarrior;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
-public class NameGen {
-    public List<String> readFile(String path){
+public class FileReader {
+    public static List<String> read(String path){
         List<String> names = new ArrayList<String>();
         BufferedReader br = null;
 
         try {
-            br = new BufferedReader(new FileReader(path));
+            br = new BufferedReader(new java.io.FileReader(path));
 
             String line = br.readLine();
 
@@ -35,15 +35,4 @@ public class NameGen {
 
         return names;
     }
-
-    public String generateName() {
-        List<String> names = readFile("src/name_data.txt");
-
-        Random rand = new Random();
-        int randomFirst = rand.nextInt(names.size());
-        int randomSecond = rand.nextInt(names.size());
-
-        return names.get(randomFirst) + " " + names.get(randomSecond);
-    }
-
 }
