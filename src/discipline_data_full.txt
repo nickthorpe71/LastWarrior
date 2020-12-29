@@ -1,0 +1,30 @@
+Knight|/images/knight.png|Knights are one of the most feared and best-protected warriors on the battlefield.|15|-10|-10|30|45|-10|0
+Samurai|/images/samurai.png|Trained from aged 10 or even earlier, Samurai are elite and highly-trained soldiers adept at using both the bow and sword.|0|0|10|10|10|10|10
+Berserker|/images/berserker.jpg|While in a frenzied state, berserkers lose all human capacity for reason or self-cognizance, and are known to scream and howl constantly, and rip enemies to shreds with their bare hands.|-10|-10|45|45|-30|-10|-10
+Hoplite|/images/hoplite.jpg|Standard soldier specialising combat with spear, shield and sword. Light armor allows them to move with agility.|0|10|10|0|0|15|15
+Centurion|/images/centurion.jpg|The centurion is known for their size, strength and dexterity in throwing their missile weapons and for their skill in the use of his sword and shield.|10|0|0|20|10|0|10
+Ninja|/images/ninja.jpg|Specialised assassins, saboteurs, and secret agents of warfare who are highly-trained proponents of the martial arts, especially what later became known as ninjutsu or 'the art of the ninja'.|-10|0|30|-10|-10|30|20
+Amazon|/images/amazon.png|Insane, badass warriors. They smoke pot, cover their skin with tattoos, ride horses, and fight more brutally than almost any other warrior. They even cut off their breasts to fire their bows better!|0|20|5|10|0|5|10
+Akinji|/images/akinji.jpeg|Unpaid they live and operate as raiders on the frontiers of the Ottoman Empire, subsisting on plunder.|10|10|0|10|10|0|10
+Cossack|/images/cossack.jpg|The word "Cossack" is derived from the Turkic term kazak that means "free man" or "adventurer".|0|20|10|0|0|10|10
+Eagle warrior|/images/eagle_warrior.jpg|The uniforms of eagle warriors signified both courage on the battlefield and physical strength. As headgear, eagle warriors wore the heads of eagles, including an open beak, and used eagle feathers as adornments.|10|10|10|0|-10|15|15
+Gladiator|/images/gladiator.jpg| For every epic story of a gladiator becoming a legend of the arena and winning fame and freedom, thousands of others die anonymously on the sand.|0|10|10|5|5|10|10
+Harii|/images/harii.jpg|Innate savagery by skill and timing: with black shields and painted bodies, they choose dark nights to fight, and by means of terror and shadow of a ghostly figure they cause panic, since no enemy can bear a sight so unexpected and hellish; in every battle the eyes are the first to be conquered.|-20|20|20|20|-10|10|10
+Hashashin|/images/hashashin.png|Typically they prefer stealth and deception. Their weapon of choice being a dagger or a small blade, they rejected poison, bows and other weapons that allowed the attacker to escape.|0|15|20|-10|-5|20|10
+Highlander|/images/highlander.jpg|Like the rocks that break the waves, Highlanders have weathered many storms.|10|0|-10|30|10|0|10
+Hulubalang|/images/hulubalang.jpg|Hulubalang are the military nobility of the classical Malay kingdoms of Southeast Asia.|5|5|10|5|5|10|10
+Hwarang|/images/hwarang.jpg|Hwarang, also known as Flowering Knights, are an elite warrior group of male youth in Silla, an ancient kingdom of the Korean Peninsula.|0|5|10|10|5|10|10
+Immortal|/images/immortal.jpg|They are sophisticated, well-equipped warriors, their armor glittering with gold. Their armament includes wicker shields, short spears, swords or large daggers, bow and arrow.|0|10|10|10|0|10|10
+Jaguar warrior|/images/jaguar_warrior.jpg|All out fighting troops and full time warriors. The brute force of the Aztec army, they wear Jaguar skins over their heads.|0|10|10|20|0|0|10
+Janissary|/images/janissary.jpeg|Turkish yatagan swords are the signature weapon of the Janissaries and they are expert archers.|0|0|10|15|-10|15|20
+Jinyiwei|/images/knight.png|Knights are one of the most feared and best-protected warriors on the battlefield.|15|-10|-10|30|45|-10|0
+Kipchak|/images/kipchak.jpg|Bows, axes, knives.|5|5|0|20|10|5|5
+Kshatriya|/images/kshatriya.jpg|One of the four varna (social orders) of Hindu society, associated with warriorhood. The Sanskrit term kṣatriyaḥ is used in the context of Vedic society wherein members were organised into four classes: brahmin, kshatriya, vaishya and shudra.|0|0|10|10|10|10|10
+Mongol warrior|/images/mongol_warrior.jpg|Proficient at using battle axes, lances, spears, daggers, long knives, and sometimes swords which were typically short, light, and with a single cutting edge.|0|10|10|10|0|10|10
+Nubian|/images/nubian.jpg|As warriors, the ancient Nubians are famous for their skill and precision with the bow and arrow..|5|10|10|10|-20|15|20
+Shaolin|/images/shaolin.jpg| Due to their extreme discipline and cultivation practices, the monks incorporated an aspect of spirituality and mental control into their fighting arts.|10|15|15|-10|-10|15|15
+Shieldmaiden|/images/shieldmaiden.jpg|The shield is part of the Shieldmaidens’ primary personal defense. It is built of planked wood, and cut in the shape of a circle. In the center is a rounded, convex piece of iron bolted to the front of the shield to repel the enemy’s blows. The sword is both the favored weapon and treasured possession of a soldier.|5|0|-10|10|45|0|0
+Spartan|/images/spartan.jpg|Adaptability, a tolerance for pain and for changing, challenging conditions — a mental toughness that bolstered physical toughness, and vice versa.|10|30|0|5|0|5|5
+Templar|/images/templar.png|When the Holy Land was lost, support for the order faded.|0|5|-10|30|30|-5|0
+Viking|/images/viking.jpg|Known for their bravery and fearlessness in battle. Fighting with the ancient gods on their side.|5|10|10|30|-10|5|0
+Zulu|/images/zulu.jpg|Zulu carry a heavy broad bladed stabbing spear with an 18 inch blade nearly 2 inches wide this had a 30 inch wooden shaft and a throwing spear with a 7 inch blade on a 3ft shaft.|5|5|10|30|-20|10|10

@@ -2,11 +2,16 @@ package com.los.lastwarrior;
 
 public class Main {
     public static void main(String[] args) {
-        Warrior warrior1 = new Warrior();
-        Warrior warrior2 = new Warrior();
+//        Warrior warrior1 = new Warrior();
+//        Warrior warrior2 = new Warrior();
+//
+//        System.out.println("\nWarrior1 ---- \n" + warrior1.toString());
+//        System.out.println("\nWarrior2 ---- \n" + warrior2.toString());
 
-        System.out.println("\nWarrior1 ---- \n" + warrior1.toString());
-        System.out.println("\nWarrior2 ---- \n" + warrior2.toString());
+        for(int i = 0; i < 100; i++){
+            Warrior warrior = new Warrior();
+            System.out.println("\nWarrior" + i + " ---- \n" + warrior.toString());
+        }
     }
 }
 
