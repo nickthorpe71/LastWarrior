@@ -1,7 +1,9 @@
 package com.los.lastwarrior.warrior;
 
 import com.los.lastwarrior.FileReader;
+import com.los.lastwarrior.tournament.Round;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -11,7 +13,7 @@ public class Warrior {
     private int age;
     private int height;
     private int weight;
-    private int wins;
+    private List<Round> wins = new ArrayList<>();
     private boolean alive;
 
     private Discipline discipline;
@@ -38,23 +40,22 @@ public class Warrior {
         firstName = allNames.get(rand.nextInt(allNames.size()));
         lastName = allNames.get(rand.nextInt(allNames.size()));
         age = rand.nextInt(100 + 1 - 12) + 12; //years
-        height = rand.nextInt(220 + 1 - 120) + 120 - ((age < 20 || age > 70) ? 40 : 0); //cm
-        weight = rand.nextInt((height * 2) + 1 - 120) + 120 - ((age < 22 || age > 70) ? 50 : 0); //lbs
+        height = rand.nextInt(220 + 1 - 140) + 140 - ((age < 16 || age > 70) ? rand.nextInt(40) : 0); //cm
+        weight = rand.nextInt((height * 2) + 1 - 120) + 120 - ((age < 22 || age > 70) ? rand.nextInt(50) : 0); //lbs
 
-        wins = 0;
         alive = true;
 
         discipline = allDisciplines.get(rand.nextInt(allDisciplines.size()));
         weapons = allWeapons.get(rand.nextInt(allWeapons.size()));
 
         hp += (height - 100) + (weight - 100) - ((age > 50) ? age / 2 : 0) + rand.nextInt(50) + discipline.getHp();
-        endurance += (height/2) - (weight/4) - ((age > 50) ? age / 2 : 0) + rand.nextInt(100) + discipline.getEndurance();
-        speed += (height/2) - (weight/4) - ((age > 50) ? age / 2 : 0) + rand.nextInt(100) + discipline.getSpeed();
+        endurance += (- (Math.abs(weight - height) / 2) - ((age > 50) ? age / 4 : 0) + rand.nextInt(150) + (discipline.getEndurance()));
+        speed += (height/2) - (weight/2) - ((age > 50) ? age / 2 : 0) + rand.nextInt(100) + discipline.getSpeed();
         power += (height - 100) + (weight/2) - ((age > 50) ? age / 10 : 0) + rand.nextInt(50) + speed + discipline.getPower();
         defense += (height - 100) + (weight/2) - ((age > 50) ? age / 10 : 0) + rand.nextInt(50) + discipline.getDefense();
         evasion += speed - (weight / 4) + rand.nextInt(50) + ((age >30) ? age / (rand.nextInt(10) + 1) : 0) + discipline.getEvasion();
         accuracy += speed + rand.nextInt(50) + ((age >30) ? age / (rand.nextInt(10) + 1) : 0) + discipline.getAccuracy();
-        swingRate = Math.abs(speed - endurance);
+        swingRate = (25 - Math.round(endurance / 15)) - speed / 75;
     }
 
     public String toString() {
@@ -114,12 +115,16 @@ public class Warrior {
         this.weight = weight;
     }
 
-    public int getWins() {
+    public List<Round> getWins() {
         return wins;
     }
 
-    public void setWins(int wins) {
+    public void setWins(List<Round> wins) {
         this.wins = wins;
+    }
+
+    public void addWin(Round win) {
+        this.wins.add(win);
     }
 
     public boolean isAlive() {

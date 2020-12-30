@@ -14,10 +14,8 @@ public class Main {
         Round round1 = new Round(warrior1, warrior2);
         round1.execute();
 
-//        for(int i = 0; i < round1.getBattleLog().size(); i++){
-//            System.out.println(round1.getBattleLog().get(i));
-//        }
-
+        // This needs to be added to the battleLog of the round and Round should include a "summary" method that only prints this info plus the time of the battle and other summary info
+        // START
         Warrior winner = round1.getWinner();
         Warrior loser = round1.getLoser();
 
@@ -28,40 +26,30 @@ public class Main {
         System.out.println(round1.getW1SwingCount() + " total swings");
         System.out.println(round1.getW1MissCount() + " misses");
         System.out.println((round1.getW1SwingCount() - round1.getW1MissCount()) + " connections");
-        System.out.println(round1.getW1TotalDamage() + " total damage\n");
+        System.out.println(round1.getW1TotalDamage() + " total damage");
+        System.out.println((round1.getW1TotalDamage() / (round1.getW1SwingCount() - round1.getW1MissCount()))  + " average damage per hit\n");
 
         System.out.println(warrior2.getFirstName() + " Stats:");
         System.out.println(round1.getW2SwingCount() + " total swings");
         System.out.println(round1.getW2MissCount() + " misses");
         System.out.println((round1.getW2SwingCount() - round1.getW2MissCount()) + " connections");
         System.out.println(round1.getW2TotalDamage() + " total damage");
+        System.out.println((round1.getW2TotalDamage() / (round1.getW2SwingCount() - round1.getW2MissCount()))  + " average damage per hit\n");
 
+
+        System.out.println("Total round time: " + round1.getRoundTime());
+        // END
     }
 }
 
 // todo:
 // 1. name gen - complete
-// 2. warrior base stats and class check python code for base
-// 3. enemy base stats
-// 4. simple battle (use blackjack/python code as an example)
-// 5. write simple battle to text file
+// 2. warrior base stats and class check python code for base - complete
+// 3. enemy base stats - complete
+// 4. simple battle (use blackjack/python code as an example) - complete
+// 5. change cm to feet/inches for display
+// 6. Tournaments contain Levels which contain Rounds
+// 7. Logging for tournaments, levels and rounds
+// 8. Tests (100% coverage)
+// 9. Add visuilization of some kind
 
-// FILE WRITING \\
-//public void writeFile(String name) {
-//    PrintWriter out = null;
-//    try {
-//        // 1. create the output stream
-//        out = new PrintWriter(new BufferedWriter(new FileWriter("output.txt")));
-//
-//        // 2. write the data to the output stream
-//        out.printf("Name: %s\n", name);
-//
-//    } catch (IOException e) {
-//        e.printStackTrace();
-//    } finally {
-//        if(out != null) {
-//            // 3. close the output stream
-//            out.close();
-//        }
-//    }
-//}

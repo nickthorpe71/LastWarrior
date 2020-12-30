@@ -10,6 +10,7 @@ public class Round {
     private int roundTime; // seconds
     private Warrior warrior1;
     private Warrior warrior2;
+
     private int w1SwingCount = 0;
     private int w2SwingCount = 0;
     private int w1MissCount = 0;
@@ -30,14 +31,14 @@ public class Round {
     public void execute(){
         Random rand = new Random();
 
-        float w1Hit = ((float)warrior1.getAccuracy() / (float)warrior2.getEvasion()) * 20;
-        float w2Hit = ((float)warrior2.getAccuracy() / (float)warrior1.getEvasion()) * 20;
+        float w1Hit = ((float)warrior1.getAccuracy() / (float)warrior2.getEvasion()) * 50;
+        float w2Hit = ((float)warrior2.getAccuracy() / (float)warrior1.getEvasion()) * 50;
 
         warrior1.setHitChance((int)w1Hit);
         warrior2.setHitChance((int)w2Hit);
 
-        float w1Dmg = ((float)warrior1.getPower() / (float)warrior2.getDefense()) * 10;
-        float w2Dmg = ((float)warrior2.getPower() / (float)warrior1.getDefense()) * 10;
+        float w1Dmg = ((float)warrior1.getPower() / (float)warrior2.getDefense()) * 25;
+        float w2Dmg = ((float)warrior2.getPower() / (float)warrior1.getDefense()) * 25;
 
         warrior1.setBaseDamage((int)w1Dmg);
         warrior2.setBaseDamage((int)w2Dmg);
@@ -87,12 +88,12 @@ public class Round {
         }
 
         if(warrior2.getHp() <= 0){
-            // add warrior2 to warrior1's wins list (should rename)
+            warrior1.addWin(this);
             warrior2.setAlive(false);
             winner = warrior1;
             loser = warrior2;
         } else {
-            // add warrior1 to warrior2's wins list (should rename)
+            warrior2.addWin(this);
             warrior1.setAlive(false);
             winner = warrior2;
             loser = warrior1;

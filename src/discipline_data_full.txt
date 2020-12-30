@@ -17,7 +17,7 @@ Hwarang|/images/hwarang.jpg|Hwarang, also known as Flowering Knights, are an eli
 Immortal|/images/immortal.jpg|They are sophisticated, well-equipped warriors, their armor glittering with gold. Their armament includes wicker shields, short spears, swords or large daggers, bow and arrow.|0|10|10|10|0|10|10
 Jaguar warrior|/images/jaguar_warrior.jpg|All out fighting troops and full time warriors. The brute force of the Aztec army, they wear Jaguar skins over their heads.|0|10|10|20|0|0|10
 Janissary|/images/janissary.jpeg|Turkish yatagan swords are the signature weapon of the Janissaries and they are expert archers.|0|0|10|15|-10|15|20
-Jinyiwei|/images/knight.png|Knights are one of the most feared and best-protected warriors on the battlefield.|15|-10|-10|30|45|-10|0
+Jinyiwei|/images/jinyiwei.jpg|The Embroidered Uniform Guard was the imperial secret police that served the emperors of the Ming dynasty in China.|5|10|15|15|-10|10|10
 Kipchak|/images/kipchak.jpg|Bows, axes, knives.|5|5|0|20|10|5|5
 Kshatriya|/images/kshatriya.jpg|One of the four varna (social orders) of Hindu society, associated with warriorhood. The Sanskrit term kṣatriyaḥ is used in the context of Vedic society wherein members were organised into four classes: brahmin, kshatriya, vaishya and shudra.|0|0|10|10|10|10|10
 Mongol warrior|/images/mongol_warrior.jpg|Proficient at using battle axes, lances, spears, daggers, long knives, and sometimes swords which were typically short, light, and with a single cutting edge.|0|10|10|10|0|10|10
