@@ -16,6 +16,22 @@ public class Discipline {
     private int evasion = 0;
     private int accuracy = 0;
 
+    public Discipline() {
+    }
+
+    public Discipline(String discipline, String imagePath, String history, int hp, int endurance, int speed, int power, int defense, int evasion, int accuracy) {
+        this.discipline = discipline;
+        this.imagePath = imagePath;
+        this.history = history;
+        this.hp = hp;
+        this.endurance = endurance;
+        this.speed = speed;
+        this.power = power;
+        this.defense = defense;
+        this.evasion = evasion;
+        this.accuracy = accuracy;
+    }
+
     public String getDiscipline() {
         return discipline;
     }
@@ -94,5 +110,21 @@ public class Discipline {
 
     public void setAccuracy(int accuracy) {
         this.accuracy = accuracy;
+    }
+
+    @Override
+    public String toString() {
+        return "Discipline{" +
+                "discipline='" + discipline + '\'' +
+                ", imagePath='" + imagePath + '\'' +
+                ", history='" + history + '\'' +
+                ", hp=" + hp +
+                ", endurance=" + endurance +
+                ", speed=" + speed +
+                ", power=" + power +
+                ", defense=" + defense +
+                ", evasion=" + evasion +
+                ", accuracy=" + accuracy +
+                '}';
     }
 }
