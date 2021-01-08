@@ -2,11 +2,11 @@ package com.los.lastwarrior.tournament;
 
 import com.los.lastwarrior.warrior.Warrior;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Round {
+    private Date roundDate = new Date();
+    private UUID id = UUID.randomUUID();
     private int roundTime; // seconds
     private Warrior warrior1;
     private Warrior warrior2;
@@ -138,5 +138,9 @@ public class Round {
 
     public int getW2TotalDamage() {
         return w2TotalDamage;
+    }
+
+    public UUID getId(){
+        return id;
     }
 }
